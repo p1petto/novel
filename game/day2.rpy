@@ -49,4 +49,5 @@
     show g beaten at posR
     b "Не попадайся мне на глаза, ********!"
     g "*Плачет*"
+    jump day_3
     return

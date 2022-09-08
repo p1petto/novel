@@ -4,8 +4,11 @@ init:
     image bg_r = "images/scenes/room.jpg"
     image bg_sc = "images/scenes/school_corridor.jpg"
     image bg_s = "images/scenes/shop.jpg"
+    image bg_gr = "images/scenes/girl_room.jpg"
+    image bg_w = "images/scenes/wheelchair.jpg"
 
 define g = Character("[name]", color="#c8ffc8")         # главный герой
+define gr = Character("[name]", color="#c8ffc8")         # главный герой
 define girl = Character("Маша", color="#ffe9c8")        # девушка
 define b = Character("Гопник", color="#ffe9c8")         # гопник
 define m = Character("Мама", color="#ffe9c8")           # мама
@@ -20,6 +23,14 @@ image g smile   = "images/characters/g_smile.png"
 image g normal  = "images/characters/g_normal.png"
 image g beaten  = "images/characters/g_beaten.png"
 image g scared  = "images/characters/g_scared.png"
+
+image gr smile   = "images/characters/gr_smile.png"
+image gr normal  = "images/characters/gr_normal.png"
+image gr money  = "images/characters/gr_money.png"
+
+image m normal  = "images/characters/m_normal.png"
+image d angry  = "images/characters/d_angry.png"
+
 
 
 init:
