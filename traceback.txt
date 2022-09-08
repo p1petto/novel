@@ -1,22 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/day2.rpy", line 14, in script
-    e "Главный герой приходит в школу."
-Exception: Sayer 'e' is not defined.
+  File "game/day2.rpy", line 30, in script
+    show g scared at posR
+  File "game/day2.rpy", line 30, in <module>
+    show g scared at posR
+NameError: name 'posR' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/day2.rpy", line 14, in script
-    e "Главный герой приходит в школу."
-  File "C:\Users\tsydy\Desktop\renpy-8.0.3-sdk\renpy\ast.py", line 881, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\tsydy\Desktop\renpy-8.0.3-sdk\renpy\ast.py", line 774, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'e' is not defined.
+  File "game/day2.rpy", line 30, in script
+    show g scared at posR
+  File "C:\Users\dan03\Downloads\renpy-8.0.3-sdk\renpy\ast.py", line 1408, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\dan03\Downloads\renpy-8.0.3-sdk\renpy\ast.py", line 1367, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\dan03\Downloads\renpy-8.0.3-sdk\renpy\ast.py", line 1367, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\dan03\Downloads\renpy-8.0.3-sdk\renpy\python.py", line 1092, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\dan03\Downloads\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/day2.rpy", line 30, in <module>
+    show g scared at posR
+NameError: name 'posR' is not defined
 
-Windows-10-10.0.19044 AMD64
+Windows-10-10.0.22000 AMD64
 Ren'Py 8.0.3.22090602
 novel 1.0
-Thu Sep  8 16:21:20 2022
+Thu Sep  8 16:46:05 2022
