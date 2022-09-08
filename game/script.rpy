@@ -1,6 +1,4 @@
 ﻿init:
-    image bg_pg = "images/scenes/playground.jpg"
-    image bg_b = "images/scenes/bushes.jpg"
     $ answers = 0
     $ end = False
 label start:
@@ -26,7 +24,7 @@ label start:
         "Сообщить в полицию":
             $ end = True
     if end:
-        pass
+
         return
     else:
         g "Что же тут, оооо, деньги, кайфффф"

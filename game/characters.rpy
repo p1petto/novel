@@ -1,3 +1,9 @@
+init:
+    image bg_pg = "images/scenes/playground.jpg"
+    image bg_b = "images/scenes/bushes.jpg"
+    image bg_r = "images/scenes/room.jpg"
+    image bg_sc = "images/scenes/school_corridor.jpg"
+    image bg_s = "images/scenes/shop.jpg"
 
 define g = Character("[name]", color="#c8ffc8")         # главный герой
 define girl = Character("Маша", color="#ffe9c8")        # девушка

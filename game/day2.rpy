@@ -1,31 +1,24 @@
-﻿
-label day_2:
+﻿label day_2:
 
-    scene bg room
+    scene bg_r
 
     show g normal
 
     g "Какой прекрасный день, я проснулся богатым!"
 
-    scene school
+    scene bg_sc
 
     show g normal
 
     e "Главный герой приходит в школу."
 
-    scene school_coridor
-
     show g normal
 
     e "Главный герой шарится в своем шкафчике."
 
-    scene school_coridor
-
     show g normal
 
     e "Задира подходит к главному герою"
-
-    scene school_coridor
 
     show g scared at posR
 
