@@ -33,5 +33,6 @@ label start:
     else:
         g "Что же тут, оооо, бабки, кайфффф"
         g "Пойду куплю шмар"
+    jump day_2
 
     return
