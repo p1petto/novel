@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 13: init statement expects a non-empty block.
-    init:
-         ^
+File "game/script.rpy", line 24: invalid syntax
+    name = renpy.input(g "Боец, как тебя зовут?", default="Меня зовут ", length=5, allow="input")
+                          ^
+    
 
 Ren'Py Version: Ren'Py 8.0.3.22090602
-Thu Sep  8 14:51:53 2022
+Thu Sep  8 15:31:21 2022

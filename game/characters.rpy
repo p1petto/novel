@@ -1,4 +1,5 @@
-define g = Character('Ваня Донской', color="#c8ffc8")
+
+define g = Character("[name]", color="#c8ffc8")
 
 # image G smile   = "images/''"
 image g normal  = "images/characters/g_normal.png"
