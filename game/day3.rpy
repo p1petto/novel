@@ -1,4 +1,4 @@
-start day_3:
+label day_3:
     scene room
     g "Зевок...."
     

@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 2: Unexpected indentation at start of file.
+File "game/day3.rpy", line 1: expected statement.
+    start day_3:
+               ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090602
-Thu Sep  8 20:44:08 2022
+Thu Sep  8 21:27:59 2022

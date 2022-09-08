@@ -1,4 +1,4 @@
-Thu Sep  8 20:48:08 2022
+Thu Sep  8 23:07:33 2022
 Windows-10-10.0.19044
 Ren'Py 8.0.3.22090602
  
@@ -35,15 +35,15 @@ Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.05s
+Interface start took 0.06s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
-Windowed mode.
+Fullscreen mode.
 Vendor: "b'NVIDIA Corporation'"
 Renderer: b'NVIDIA GeForce GTX 1070/PCIe/SSE2'
 Version: b'4.6.0 NVIDIA 512.15'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1387, 780) drawable=(1387, 780)
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
