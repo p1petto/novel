@@ -30,7 +30,7 @@ image g scared  = "images/characters/g_scared.png"
 
 image gr smile   = "images/characters/gr_smile.png"
 image gr normal  = "images/characters/gr_normal.png"
-image gr money  = "images/characters/gr_money.png"
+image gr mone  = "images/characters/gr_mone.png"
 
 image m normal  = "images/characters/m_normal.png"
 image d angry  = "images/characters/d_angry.png"
