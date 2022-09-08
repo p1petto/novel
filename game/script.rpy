@@ -9,14 +9,31 @@ define e = Character('Эйлин', color="#c8ffc8")
 # а eileen happy — "eileen happy.webp", и тогда они появятся в игре.
 
 # Игра начинается здесь:
+
+init:
+    #image bg = "images"
+    $ answers = 0
+    $ end = False
 label start:
 
     scene bg room
 
-    show eileen happy
+    show g normal
 
-    e "Вы создали новую игру Ren'Py."
+    g "О нет, мяч улетел в кусты...{w=3}\nПойду схожу за ним"
+    
+    g "Что это лежит, похожу на какую-то сумку{w=3}\nХмм"
 
-    e "Добавьте сюжет, изображения и музыку и отправьте её в мир!"
+    menu:
+        "Что же делать?"
+        "Взять сумку":
+            $ answers += 1
+        "Сообщить в полицию":
+            $ end = True
+    if end:
+        pass
+        return
+    else:
+        pass
 
     return
