@@ -14,6 +14,7 @@ define girl_1 = Character("Маша", color="#ffe9c8")        # девушка
 define girl_2 = Character("Маша", color="#ffe9c8")        # девушка
 define girl_3 = Character("Маша", color="#ffe9c8")        # девушка
 define b = Character("Гопник", color="#ffe9c8")         # гопник
+define bandit = Character("Бандит", color="#ffe9c8")         # гопник
 define m = Character("Мама", color="#ffe9c8")           # мама
 define d = Character("Директор", color="#ffe9c8")       # директор
 define s = Character("Охранник", color="#ffe9c8")       # охранник
@@ -45,7 +46,11 @@ image b slave  = "images/characters/b_slave.png"
 image s normal = "images/characters/security.png"
 image p normal  = "images/characters/policman.png"
 
+image bandit = "images/characters/bandit.png"
+
 
 init:
     $ posR = Position(xalign=0.8, yalign=1)
     $ posL = Position(xalign=0.2, yalign=1)
+    $ posRl = Position(xalign=0.9, yalign=1)
+    $ posLl = Position(xalign=0.1, yalign=1)

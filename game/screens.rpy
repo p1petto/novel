@@ -178,7 +178,7 @@ screen input(prompt):
     window:
 
         vbox:
-            xanchor gui.dialogue_text_xalign
+            xalign gui.dialogue_text_xalign
             xpos gui.dialogue_xpos
             xsize gui.dialogue_width
             ypos gui.dialogue_ypos
@@ -354,26 +354,18 @@ screen main_menu():
     ## заменять этот.
     tag menu
 
-    add gui.main_menu_background
+    imagemap:
+        ground "gui/main_menu.png"
+        idle "gui/menu_normal.png"
+        hover "gui/menu_hover.png"
 
-    ## Эта пустая рамка затеняет главное меню.
-    frame:
-        style "main_menu_frame"
+        hotspot(80, 240, 430, 90) action Start()
+        hotspot(80, 360, 670, 90) action ShowMenu("load")
+        hotspot(80, 490, 670, 90) action ShowMenu("preferences")
+        hotspot(80, 620, 490, 90) action ShowMenu("about")
+        hotspot(80, 890, 370, 90) action Quit(confirm=True)
 
-    ## Оператор use включает отображение другого экрана в данном. Актуальное
-    ## содержание главного меню находится на экране навигации.
-    use navigation
-
-    if gui.show_name:
-
-        vbox:
-            style "main_menu_vbox"
-
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
+    
 
 
 style main_menu_frame is empty
@@ -908,7 +900,7 @@ screen history():
 
 ## Это определяет, какие теги могут отображаться на экране истории.
 
-define gui.history_allow_tags = { "alt", "noalt", "rt", "rb", "art" }
+define gui.history_allow_tags = { "alt", "noalt" }
 
 
 style history_window is empty

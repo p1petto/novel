@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/day3.rpy", line 1: expected statement.
-    start day_3:
-               ^
+File "game/day_4_branch_2.rpy", line 20: expected menuitem
+    if bad_end:
+    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090602
-Thu Sep  8 21:27:59 2022
+Fri Sep  9 11:14:32 2022

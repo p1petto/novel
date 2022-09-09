@@ -26,22 +26,23 @@
 
     b "Слышь, маленький *****, разминай лицо, сейчас буду тебя бить."
 
-    $answer = 0
     $end = False
     menu:
         "Твои действия?"
         "Ааа, не бей, пожалуйста!":
-            $answer += 1
+            pass
         "Ты не ударишь меня, я стал очень богатым)0000))))000))":
-            $end = True
+            $ bad_answer += 1
+            $ end = True
     if end:
         show g scared at posR
         show b normal at posL
         b "ААААРГРХРХРХРХР!!!"
-    if answer == 1:
+    else:
         show g scared at posR
         show b normal at posL
         b "ААААРГРХРХРХРХР!!!"
+        
     show b normal at posL
     show g beaten at posR with hpunch and vpunch
     b "Не попадайся мне на глаза, ********!"

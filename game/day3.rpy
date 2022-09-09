@@ -19,7 +19,7 @@ label day_3:
     menu:
         "Что мне следует прикупить?"
         "Я куплю себе парочку вещей":
-            $ answers += 1
+            $ bad_answers += 1
             $ firslt_root_day_3 = True
         "Я не буду себе ничего покупать.":
             $ second_root_day_3 = True

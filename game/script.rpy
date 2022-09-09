@@ -1,8 +1,8 @@
 ﻿init:
-    $ answers = 0
+    $ bad_answers = 0
     $ end = False
 label start:
-
+    play music "audio/main_morive.mp3"
     $ name = renpy.input("Как вас зовут?")
 
     scene bg_pg
@@ -18,12 +18,12 @@ label start:
     menu:
         "Что же делать?"
         "Взять сумку":
-            $ answers += 1
+            $ bad_answers += 1
         "Сообщить в полицию":
             $ end = True
     if end:
-
-        return
+        play sound "audio/win-police.mp3"
+        g "Приехала полиция"
     else:
         g "Что же тут, оооо, деньги, кайфффф"
         g "Пойду куплю покушаю"
