@@ -350,6 +350,9 @@ style navigation_button_text:
 
 screen main_menu():
 
+    python:
+        renpy.music.queue("audio/menu.mp3",channel = "music", fadein = 1)
+
     ## Этот тег гарантирует, что любой другой экран с тем же тегом будет
     ## заменять этот.
     tag menu
