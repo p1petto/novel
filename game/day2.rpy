@@ -42,8 +42,10 @@
         show g scared at posR
         show b normal at posL
         b "ААААРГРХРХРХРХР!!!"
-        
+
     show b normal at posL
+    stop music
+    play sound "audio/fight.mp3"
     show g beaten at posR with hpunch and vpunch
     b "Не попадайся мне на глаза, ********!"
     g "*Плачет*"

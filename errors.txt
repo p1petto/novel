@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/day_4_branch_2.rpy", line 20: expected menuitem
-    if bad_end:
-    ^
+File "game/script.rpy", line 25: expected end of line
+    stop music "audio/main_morive.mp3"
+               ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090602
-Fri Sep  9 11:14:32 2022
+Fri Sep  9 12:25:37 2022

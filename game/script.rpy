@@ -2,7 +2,7 @@
     $ bad_answers = 0
     $ end = False
 label start:
-    play music "audio/main_morive.mp3"
+    play music "audio/main_motiv.mp3"
     $ name = renpy.input("Как вас зовут?")
 
     scene bg_pg
@@ -22,6 +22,7 @@ label start:
         "Сообщить в полицию":
             $ end = True
     if end:
+        stop music
         play sound "audio/win-police.mp3"
         g "Приехала полиция"
     else:
