@@ -1,6 +1,6 @@
 ﻿label day_2:
 
-    scene bg_r
+    scene bg_r  with fade
 
     show g normal
 
@@ -20,7 +20,7 @@
 
     e "Задира подходит к главному герою"
 
-    show g scared at posR
+    show g scared at posR 
 
     show b normal at posL
 
@@ -35,18 +35,15 @@
         "Ты не ударишь меня, я стал очень богатым)0000))))000))":
             $end = True
     if end:
-        scene school_coridor
         show g scared at posR
-        show b angry at posL
+        show b normal at posL
         b "ААААРГРХРХРХРХР!!!"
     if answer == 1:
-        scene school_coridor
         show g scared at posR
-        show b angry at posL
+        show b normal at posL
         b "ААААРГРХРХРХРХР!!!"
-    scene school_coridor
-    show b angry at posL
-    show g beaten at posR
+    show b normal at posL
+    show g beaten at posR with hpunch and vpunch
     b "Не попадайся мне на глаза, ********!"
     g "*Плачет*"
     jump day_3

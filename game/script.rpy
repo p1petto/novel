@@ -3,8 +3,6 @@
     $ end = False
 label start:
 
-    scene bg room
-
     $ name = renpy.input("Как вас зовут?")
 
     scene bg_pg
